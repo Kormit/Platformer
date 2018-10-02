@@ -11,18 +11,19 @@ namespace Game1
 {
     class Player
     {
-        Sprite playerSprite = new Sprite();
+        public Sprite playerSprite = new Sprite();
 
-
+        Game1 game = null;
 
         public Player()
         {
 
         }
 
-        public void Load(ContentManager content)
+        public void Load(ContentManager content, Game1 theGame)
         {
             playerSprite.Load(content, "hero");
+            game = theGame; // We are now able to access the information stored in the 'Game1' class
         }
 
         public void Update(float deltaTime)

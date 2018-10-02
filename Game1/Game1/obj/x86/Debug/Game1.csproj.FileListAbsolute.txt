@@ -50,3 +50,16 @@ C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\obj\x86\Debug\Game1.csp
 C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
 C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\obj\x86\Debug\Game1.exe
 C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\obj\x86\Debug\Game1.pdb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\Content\Castle Tileset.xnb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\Content\Level 1.xnb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.dll
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.dll
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.dll
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.dll
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.pdb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.xml
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.pdb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.xml
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
+C:\Users\s182213\Documents\GitHub\Platformer\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.xml

@@ -1,6 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoGame.Extended;
+using MonoGame.Extended.Tiled;
+using MonoGame.Extended.Tiled.Graphics;
+using MonoGame.Extended.ViewportAdapters;
+
 
 namespace Game1
 {
@@ -11,6 +16,11 @@ namespace Game1
         SpriteBatch spriteBatch;
 
         Player player = new Player(); //Create an instance of our player class
+
+        Camera2D camera = null; // Creates an instance of a 2D camera
+        TiledMap map = null; // Creates an instance of a Tiled map
+        TiledMapRenderer mapRenderer = null; // Creates an instance of what makes a tiled map
+
 
         public Game1()
         {
@@ -38,8 +48,19 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
-            player.Load(Content); //Call the 'Load' function in the player class
-            
+            player.Load(Content, this); // Call the 'Load' Function in the player class
+
+            BoxingViewportAdapter viewportAdapter = new BoxingViewportAdapter(Window,
+                                                                               GraphicsDevice,
+                                                                               graphics.GraphicsDevice.Viewport.Width,
+                                                                               graphics.GraphicsDevice.Viewport.Height);
+
+            camera = new Camera2D(viewportAdapter);
+            camera.Position = new Vector2(0, graphics.GraphicsDevice.Viewport.Height);
+
+            map = Content.Load<TiledMap>("Level 1");
+            mapRenderer = new TiledMapRenderer(GraphicsDevice);
+
         }
 
         /// <summary>
@@ -75,9 +96,24 @@ namespace Game1
         {
             //Clears anything previously drawn to the screen
             GraphicsDevice.Clear(Color.Gray);
+
+            var viewMatrix = camera.GetViewMatrix();
+            var projectionMatrix = Matrix.CreateOrthographicOffCenter(0,
+                                                                      GraphicsDevice.Viewport.Width,
+                                                                      GraphicsDevice.Viewport.Height,
+                                                                      0, 0.0f, -1.0f);
+
+
             //Begin drawing
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: viewMatrix);
+
+
+            mapRenderer.Draw(map, ref viewMatrix, ref projectionMatrix);
             //call the 'Draw' function from our player class
+
+            camera.Position = player.playerSprite.position - new Vector2(graphics.GraphicsDevice.Viewport.Width / 2,
+                                                                            graphics.GraphicsDevice.Viewport.Height / 2);
+
             player.Draw(spriteBatch);
             //finish drawing
             spriteBatch.End();
