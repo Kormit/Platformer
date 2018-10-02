@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/Level 1.tmx</SourceFile>
+  <SourceTime>2018-10-02T14:07:06.1710992+10:00</SourceTime>
+  <DestFile>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/bin/Windows/Level 1.xnb</DestFile>
+  <DestTime>2018-10-02T14:08:00.7295545+10:00</DestTime>
+  <Importer>TiledMapImporter</Importer>
+  <ImporterTime>2018-05-23T11:26:24+10:00</ImporterTime>
+  <Processor>TiledMapProcessor</Processor>
+  <ProcessorTime>2018-05-23T11:26:24+10:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

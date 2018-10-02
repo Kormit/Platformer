@@ -4,7 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/s182213/source/repos/Game1/Game1/Content/Arial.spritefont</File>
-    <File>C:/Users/s182213/source/repos/Game1/Game1/Content/hero.png</File>
+    <File>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/Arial.spritefont</File>
+    <File>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/hero.png</File>
+    <File>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/Castle Tileset.png</File>
+    <File>C:/Users/s182213/Documents/GitHub/Platformer/Game1/Game1/Content/Level 1.tmx</File>
   </SourceFiles>
 </SourceFileCollection>
